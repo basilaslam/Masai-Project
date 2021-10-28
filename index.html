@@ -1,0 +1,48 @@
+<head>
+    <style>
+        #Box {
+            height: 300px;
+            width: 300px;
+        }
+
+        #Box2 {
+            height: 300px;
+            width: 300px;
+        }
+
+        #maincont {
+            text-align: center;
+
+        }
+
+        button {
+            padding: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="maincont">
+        <label for="lang">Please select a Lang</label>
+        <select name="lang" id="langs" onchange=" getValue()"></select>
+        <br>
+        <br>
+        <textarea id="box_1" rows="10" cols="50">
+
+        </textarea>
+        <textarea id="box_2" rows="10" cols="50">
+
+        </textarea>
+        <br>
+        <button id="speak_button" onclick='voiceToText()'>Speak</button>
+        <button onclick="getthevalu()">translate</button>
+        <button onclick="textToSpeach()">Speak out</button>
+
+
+
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
+<script src="voiceToText.js"></script>
+<script src="textToSpeach.js"></script> 
